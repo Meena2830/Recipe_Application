@@ -1,0 +1,83 @@
+/* Container for Recipe Details */
+.recipe-details-container {
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe Title */
+.recipe-details-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Ingredients Section */
+.recipe-details-container h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Ingredients List */
+.recipe-details-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-details-container ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.recipe-details-container ul li::before {
+  content: "•";
+  color: #007bff;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  top: 0;
+}
+
+/* Steps Section */
+.recipe-details-container ol {
+  padding-left: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.recipe-details-container ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .recipe-details-container {
+    padding: 15px;
+  }
+
+  .recipe-details-container h2 {
+    font-size: 24px;
+  }
+
+  .recipe-details-container h3 {
+    font-size: 18px;
+  }
+
+  .recipe-details-container ul li,
+  .recipe-details-container ol li {
+    font-size: 14px;
+  }
+}

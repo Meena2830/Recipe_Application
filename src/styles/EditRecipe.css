@@ -1,0 +1,92 @@
+/* Container for Edit Recipe */
+.edit-recipe-container {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+.edit-recipe-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.edit-recipe-container input,
+.edit-recipe-container textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Input and Textarea Focus Styles */
+.edit-recipe-container input:focus,
+.edit-recipe-container textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Styles */
+.edit-recipe-container button {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+/* Button Hover Effect */
+.edit-recipe-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Cancel Button Styles */
+.edit-recipe-container button:nth-child(2) {
+  background-color: #f44336; /* Red for cancel */
+}
+
+.edit-recipe-container button:nth-child(2):hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .edit-recipe-container {
+    padding: 15px;
+  }
+
+  .edit-recipe-container h2 {
+    font-size: 20px;
+  }
+
+  .edit-recipe-container input,
+  .edit-recipe-container textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .edit-recipe-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
